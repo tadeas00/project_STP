@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Blocking
+  - Character
   - 
   - 
   - 
@@ -44,6 +44,6 @@ TagManager:
   - name: Floor
     uniqueID: 1882156811
     locked: 0
-  - name: Actor
+  - name: Character
     uniqueID: 129679355
     locked: 0

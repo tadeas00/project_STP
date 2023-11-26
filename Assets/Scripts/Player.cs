@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
    private BoxCollider2D boxCollider;
    private Vector3 moveDelta;
    private RaycastHit2D hit;
+   public Animator animator;
+   float x = 0f;
+   float y = 0f;
 
    private void Start()
    {
@@ -15,10 +18,12 @@ public class Player : MonoBehaviour
 
    private void FixedUpdate()
    {
-      float x = Input.GetAxisRaw("Horizontal");
-      float y = Input.GetAxisRaw("Vertical");
+      x = Input.GetAxisRaw("Horizontal") * -1f;
+      y = Input.GetAxisRaw("Vertical") * 1f;
       
       moveDelta = new Vector3(x, y, 0);
+      animator.SetFloat("Speed", x);
+      animator.SetFloat("Speed", Mathf.Abs(y));
       
       // Prohození směru postavy, dle toho kam jde
       if (moveDelta.x > 0)

@@ -18,11 +18,11 @@ public class Player : MonoBehaviour
 
    private void FixedUpdate()
    {
-      x = Input.GetAxisRaw("Horizontal") * -1f;
+      x = Input.GetAxisRaw("Horizontal") * 1f;
       y = Input.GetAxisRaw("Vertical") * 1f;
       
       moveDelta = new Vector3(x, y, 0);
-      animator.SetFloat("Speed", x);
+      animator.SetFloat("Speed", Mathf.Abs(x));
       animator.SetFloat("Speed", Mathf.Abs(y));
       
       // Prohození směru postavy, dle toho kam jde

@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
    private Vector3 moveDelta;
    private RaycastHit2D hit;
    public Animator animator;
-   float x = 0f;
+   float x = 1f;
    float y = 0f;
 
    private void Start()
@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
 
    private void FixedUpdate()
    {
-      x = Input.GetAxisRaw("Horizontal") * 1f;
-      y = Input.GetAxisRaw("Vertical") * 1f;
+      x = Input.GetAxisRaw("Horizontal");
+      y = Input.GetAxisRaw("Vertical");
+      float speed = Mathf.Max(Mathf.Abs(x), Mathf.Abs(y));
       
       moveDelta = new Vector3(x, y, 0);
-      animator.SetFloat("Speed", Mathf.Abs(x));
-      animator.SetFloat("Speed", Mathf.Abs(y));
+      animator.SetFloat("Speed", speed);
       
       // Prohození směru postavy, dle toho kam jde
       if (moveDelta.x > 0)

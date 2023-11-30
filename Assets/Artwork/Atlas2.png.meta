@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas2_0
+      name: player-run_2
       rect:
         serializedVersion: 2
         x: 224
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-run_2
+      name: player-run_3
       rect:
         serializedVersion: 2
         x: 240
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player-run_3
+      name: player-jump_0
       rect:
         serializedVersion: 2
         x: 256
@@ -311,6 +311,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: npc_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02851382b0e48d842ac12d39b2832c30
+      internalID: 1150380674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -322,15 +343,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Atlas2_0: 827730330
+      Atlas2_0: 446050703
+      npc_0: 1150380674
       player-idle_0: 151352958
       player-idle_1: -511598654
       player-idle_2: -439472046
       player-idle_3: 107069535
+      player-jump_0: 751068973
       player-run_0: -119657844
       player-run_1: 257574833
-      player-run_2: -1754202748
-      player-run_3: 751068973
+      player-run_2: 827730330
+      player-run_3: -1754202748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

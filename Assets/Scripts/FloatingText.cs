@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FloatingText : MonoBehaviour
+public class FloatingText
 {
     public bool active;
     public GameObject go;

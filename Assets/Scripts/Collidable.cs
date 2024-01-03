@@ -10,12 +10,12 @@ public class Collidable : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Collider2D[] hits = new Collider2D[10];
 
-    protected void Start()
+    protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();    
     }
 
-    protected void Update()
+    protected virtual void Update()
     {
         boxCollider.OverlapCollider(filter, hits);
         for (int i = 0; i < hits.Length; i++)

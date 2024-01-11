@@ -10,6 +10,8 @@ public class Player : Mover
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        DontDestroyOnLoad(gameObject);
     }
     private void FixedUpdate()
     {
@@ -28,7 +30,13 @@ public class Player : Mover
 
     public void OnLevelUp()
     {
-        /*maxHitpoint++;
-        hitpoint = maxHitpoint;*/
+        maxHitpoint++;
+        hitpoint = maxHitpoint;
+    }
+
+    public void SetLevel(int level)
+    {
+        for (int i = 0; i < level; i++)
+            OnLevelUp();
     }
 }

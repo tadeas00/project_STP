@@ -125,6 +125,8 @@ public class GameManager : MonoBehaviour
     }
     public void LoadState(Scene s, LoadSceneMode mode)
     {
+        SceneManager.sceneLoaded -= LoadState;
+        
         if (!PlayerPrefs.HasKey("SaveState"))
             return;
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : Collidable
 {
+    public AudioSource damageSound;
     // Demage struktura
     public int[] damagePoint = {1, 2, 3, 4, 5, 6};
     public float[] pushForce = {2.0f, 2.2f, 2.5f, 2.8f, 3.0f, 3.2f};
@@ -52,6 +53,10 @@ public class Weapon : Collidable
             };
             
             coll.SendMessage("ReceiveDamage", dmg);
+            if (damageSound != null)
+            {
+                damageSound.Play();
+            }
         }
         
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 987455212633597437}
   - component: {fileID: 1212980157209899846}
   - component: {fileID: 1343514875615595981}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,9 +119,9 @@ GameObject:
   - component: {fileID: 5983030444228289298}
   - component: {fileID: 6739589677274537525}
   - component: {fileID: 5134171018791317149}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mushichek
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -53,12 +53,9 @@ public class Weapon : Collidable
             };
             
             coll.SendMessage("ReceiveDamage", dmg);
-            if (coll.name != "SingleCrate")
+            if (damageSound != null)
             {
-                if (damageSound != null)
-                {
-                    damageSound.Play();
-                }
+                damageSound.Play();
             }
         }
         

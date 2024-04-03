@@ -7,7 +7,6 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
- 
     public Image characterIcon;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
@@ -71,10 +70,12 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
     }
- 
+
     void EndDialogue()
     {
+        
         isDialogueActive = false;
         animator.Play("hide");
+        DialogueTrigger.BoolHolder.dialogueTriggered = false;
     }
 }

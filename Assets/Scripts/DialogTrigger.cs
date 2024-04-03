@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class DialogueTrigger : MonoBehaviour
+public class DialogueTrigger : Collidable
 {
     public Dialogue dialogue;
  
@@ -9,12 +9,17 @@ public class DialogueTrigger : MonoBehaviour
     {
         DialogueManager.Instance.StartDialogue(dialogue);
     }
- 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public static class BoolHolder
     {
-        if(collision.tag == "Player")
+        public static bool dialogueTriggered = false;
+    }
+ 
+    protected override void OnCollide(Collider2D coll)
+    {
+        if (!BoolHolder.dialogueTriggered && coll.tag == "Fighter")
         {
             TriggerDialogue();
+            BoolHolder.dialogueTriggered = true;
         }
     }
 }

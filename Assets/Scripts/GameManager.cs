@@ -132,6 +132,7 @@ public class GameManager : MonoBehaviour
 
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
+        player.transform.position = GameObject.Find("Spawnpoint").transform.position;
 
         //Change Player Skin
         pesos = int.Parse(data[1]);
@@ -142,8 +143,6 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
         //Change weapon Level
         weapon.SetWeaponLevel(int.Parse(data[3]));
-
-
-        player.transform.position = GameObject.Find("Spawnpoint").transform.position;
+        
     }
 }

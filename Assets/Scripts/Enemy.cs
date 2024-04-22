@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 
 public class Enemy : Mover
@@ -78,10 +79,22 @@ public class Enemy : Mover
             hits[i] = null;
         }
     }
+    public string jmenoNestvury;
     protected override void Death()
     {
         Destroy(gameObject);
         GameManager.instance.GrantXp(xpValue);
+        if (jmenoNestvury == "Active")
+        {
+            // Najděte objekt s OteviraniDveri skriptem
+            OteviraniDveri oteviraniDveri = FindObjectOfType<OteviraniDveri>();
+
+            // Pokud byl nalezen, aktivujte funkci OtevriDvere
+            if (oteviraniDveri != null)
+            {
+                oteviraniDveri.OtevriDvere();
+            }
+        }
         GameManager.instance.ShowText("+" + xpValue + " xp", 25, Color.magenta, playerTransform.position, Vector3.up * 60, 3.0f);
     }
 }

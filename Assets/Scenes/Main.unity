@@ -19496,6 +19496,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   sceneNames:
   - Dungeon1
+  player: {fileID: 1072943394}
 --- !u!1 &1767541423
 GameObject:
   m_ObjectHideFlags: 0

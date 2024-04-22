@@ -711,13 +711,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_3
+      name: goblin_idle_0
       rect:
         serializedVersion: 2
-        x: 371
-        y: 311
-        width: 12
-        height: 17
+        x: 370
+        y: 312
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1055,7 +1055,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1076,7 +1076,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1097,7 +1097,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1118,7 +1118,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1139,7 +1139,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1160,7 +1160,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1181,7 +1181,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1202,7 +1202,7 @@ TextureImporter:
         width: 11
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1210,6 +1210,489 @@ TextureImporter:
       bones: []
       spriteID: ee49c4b4968194349bfcaf1ada4626eb
       internalID: 1575577711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_run_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1565c0c6c2d67b04fbfb560ee347edbb
+      internalID: 1229044708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_run_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7db9909f134fd14ab590565edad811d
+      internalID: 407880585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_run_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa049eaff6a937408b71f66f31fb08b
+      internalID: 1381952194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_run_0
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f796592a50c1c754e96f7d5b87ba62fe
+      internalID: 1245161496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_idle_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f229cf2e5e9b5d6429ed759755820134
+      internalID: -1314960519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_idle_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82e370182f729643b5c225285aa32bd
+      internalID: -463103234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_idle_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 312
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfe895d308d6d049b21bc5fefb10396
+      internalID: 1855743366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_run_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c52df6c4fc5ce243973eef2ac506844
+      internalID: 1215682365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_run_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc1bd4508988aa45ac5f1b084978aed
+      internalID: 368578969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_run_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee598efb46f9341bac087a6198d301
+      internalID: -1760709820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_run_0
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35590200abeeeaf468e3f8e58c488f14
+      internalID: 609415339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_idle_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d3eea167f4a034d8ff4241a3f19fa3
+      internalID: 2046622907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_idle_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ecc71f6a9af55489aef94827758f42
+      internalID: 1926500778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_idle_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56601896d05fc3546b16976bf58ee7d5
+      internalID: 1503441885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: maskgoblin_idle_0
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 336
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ab63283f1abb247900e411e816198f
+      internalID: -1849501128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_run_1
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a926889e2a0368a4f81424d8931e02ca
+      internalID: 2081690762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_run_2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346b914fdf6de1547832337e0ccabf3b
+      internalID: 2031114897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_run_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9ae366a4b01774289ce9b7aff564e1
+      internalID: 1735396390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_run_0
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a944231a16d7747b6ab5f5f079119d
+      internalID: 1884214487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_idle_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab8e542c42a3694e985c25c98c16890
+      internalID: -75449122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_idle_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011a2f936c35f134a8d92ffd0e912ebb
+      internalID: -614660252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_idle_1
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 288
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b2e621f4e18aa4692f004dd20e873e
+      internalID: -409659871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teethgoblin_idle_0
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 288
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb14a5c87d1e6a46ba6f6f606a3bacb
+      internalID: 1233579200
       vertices: []
       indices: 
       edges: []
@@ -1240,7 +1723,14 @@ TextureImporter:
       debil: 446050703
       enemy_0: -1147231518
       enemy_2: 1367358046
-      enemy_3: -785289573
+      goblin_idle_0: -785289573
+      goblin_idle_1: 1855743366
+      goblin_idle_2: -463103234
+      goblin_idle_3: -1314960519
+      goblin_run_0: 1245161496
+      goblin_run_1: 1229044708
+      goblin_run_2: 407880585
+      goblin_run_3: 1381952194
       gray_minion_idle_0: -92170758
       gray_minion_idle_1: 1085626404
       gray_minion_idle_2: 370596330
@@ -1253,6 +1743,14 @@ TextureImporter:
       green_blob_1: -1747706540
       green_blob_2: 472929456
       green_blob_3: -188424878
+      maskgoblin_idle_0: -1849501128
+      maskgoblin_idle_1: 1503441885
+      maskgoblin_idle_2: 1926500778
+      maskgoblin_idle_3: 2046622907
+      maskgoblin_run_0: 609415339
+      maskgoblin_run_1: 1215682365
+      maskgoblin_run_2: 368578969
+      maskgoblin_run_3: -1760709820
       player-idle_0: 151352958
       player-idle_1: -511598654
       player-idle_2: -439472046
@@ -1271,6 +1769,14 @@ TextureImporter:
       skeleton_run_1: -817025682
       skeleton_run_2: -1445253600
       skeleton_run_3: -549715194
+      teethgoblin_idle_0: 1233579200
+      teethgoblin_idle_1: -409659871
+      teethgoblin_idle_2: -614660252
+      teethgoblin_idle_3: -75449122
+      teethgoblin_run_0: 1884214487
+      teethgoblin_run_1: 2081690762
+      teethgoblin_run_2: 2031114897
+      teethgoblin_run_3: 1735396390
       weapon_0: -431494657
       weapon_1: 1772355065
       weapon_2: -1299473850

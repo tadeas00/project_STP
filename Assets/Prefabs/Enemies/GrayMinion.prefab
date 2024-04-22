@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd6181d196ed794aa8205269877bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
+  hitpoint: 2
+  maxHitpoint: 2
   pushRecoverySpeed: 0.2
   animator: {fileID: 2363412247446600267}
   xpValue: 1
@@ -248,6 +248,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  jmenoNestvury: 
 --- !u!61 &4525193484137483279
 BoxCollider2D:
   m_ObjectHideFlags: 0

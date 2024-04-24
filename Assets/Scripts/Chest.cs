@@ -13,7 +13,8 @@ public class Chest : Collectable
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             GameManager.instance.pesos += pesosAmount;
-            GameManager.instance.ShowText("+" + pesosAmount + " Pesos!", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
+            GameManager.instance.ShowText("+" + pesosAmount + " Dominek!", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
+            GetComponent<AudioSource>().Play();
         }
     }
 }

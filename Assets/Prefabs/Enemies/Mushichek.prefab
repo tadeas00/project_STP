@@ -60,7 +60,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damage: 1
-  pushForce: 5
+  pushForce: 1
 --- !u!61 &1343514875615595981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -272,13 +272,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd6181d196ed794aa8205269877bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
+  hitpoint: 1
+  maxHitpoint: 1
   pushRecoverySpeed: 0.2
   animator: {fileID: 5983030444228289298}
   xpValue: 1
-  triggerLenght: 1
-  chaseLenght: 5
+  triggerLenght: 0.5
+  chaseLenght: 2
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -293,3 +293,4 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  jmenoNestvury: 

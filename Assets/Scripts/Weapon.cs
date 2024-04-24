@@ -5,15 +5,12 @@ using UnityEngine;
 public class Weapon : Collidable
 {
     public AudioSource damageSound;
-    // Demage struktura
     public int[] damagePoint = {1, 2, 3, 4, 5, 6};
     public float[] pushForce = {2.0f, 2.2f, 2.5f, 2.8f, 3.0f, 3.2f};
-
-    //Update struktura
+    
     public int weaponLevel = 0;
     public SpriteRenderer spriteRenderer;
-
-    //Swing
+    
     private Animator anim;
     private float cooldown = 0.5f;
     private float lastSwing;
@@ -53,7 +50,7 @@ public class Weapon : Collidable
             };
             
             coll.SendMessage("ReceiveDamage", dmg);
-            if (coll.name != "SingleCrate" && coll.name != "TwoCrates")
+            if (coll.name != "SingleCrate" || coll.name != "TwoCrates")
             {
                 if (damageSound != null)
                 {

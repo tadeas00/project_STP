@@ -11,7 +11,6 @@ public class Enemy : Mover
     //logic
     public float triggerLenght = 1;
     public float chaseLenght = 5;
-    private bool chasing;
     private bool collidingWithPlayer;
     private Transform playerTransform;
     private Vector3 startingPosition;
@@ -34,19 +33,14 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        //Is player in range?
         if(Vector3.Distance(playerTransform.position, startingPosition) < chaseLenght)
         {
             if(Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
             {
-                chasing = true;
-                // Set the run animation
                 enemyAnimator.SetBool("IsRunning", true);
             }
             else
             {
-                chasing = false;
-                // Set the idle animation
                 enemyAnimator.SetBool("IsRunning", false);
             }
 
@@ -58,8 +52,6 @@ public class Enemy : Mover
         else
         {
             UpdateMotor(startingPosition - transform.position);
-            chasing = false;
-            // Set the idle animation
             enemyAnimator.SetBool("IsRunning", false);
         }
         
@@ -86,13 +78,11 @@ public class Enemy : Mover
         GameManager.instance.GrantXp(xpValue);
         if (jmenoNestvury == "Active")
         {
-            // Najděte objekt s OteviraniDveri skriptem
-            OteviraniDveri oteviraniDveri = FindObjectOfType<OteviraniDveri>();
-
-            // Pokud byl nalezen, aktivujte funkci OtevriDvere
-            if (oteviraniDveri != null)
+            Door openingDoor = FindObjectOfType<Door>();
+            
+            if (openingDoor != null)
             {
-                oteviraniDveri.OtevriDvere();
+                openingDoor.OpenDoor();
             }
         }
         GameManager.instance.ShowText("+" + xpValue + " xp", 25, Color.magenta, playerTransform.position, Vector3.up * 60, 3.0f);

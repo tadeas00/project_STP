@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 129679355
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -501419999, guid: 88ad62f26d956d449a8fc4574e468256, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,11 +166,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd6181d196ed794aa8205269877bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 15
-  maxHitpoint: 15
+  hitpoint: 6
+  maxHitpoint: 6
   pushRecoverySpeed: 0.1
   animator: {fileID: 7657238864596585268}
-  xpValue: 5
+  ySpeed: 0.375
+  xSpeed: 0.5
+  xpValue: 9
   triggerLenght: 1
   chaseLenght: 1
   filter:
@@ -187,6 +189,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  jmenoNestvury: 
 --- !u!1 &7356703717655663324
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,4 +295,4 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damage: 1
-  pushForce: 4
+  pushForce: 6

@@ -14,12 +14,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
+            Destroy(hud.gameObject);
+            Destroy(menu.gameObject);
             return;
         }
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     //Resources 
@@ -32,6 +34,10 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public Animator deathMenuAnim;
+    public GameObject hud;
+    public GameObject menu;
 
 
     // Logic
@@ -47,7 +53,6 @@ public class GameManager : MonoBehaviour
     // Upgrade weapon
     public bool TryUpgradeWeapon()
     {
-        // is may level?
         if(weaponPrices.Count <= weapon.weaponLevel)
             return false;
 
@@ -59,6 +64,12 @@ public class GameManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void OnHitpointChange()
+    {
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
     }
 
     // Experiance
@@ -98,20 +109,24 @@ public class GameManager : MonoBehaviour
            OnLevelUp(); 
         }
     }
-
-
     public void OnLevelUp()
     {
         Debug.Log("Level up");
         player.OnLevelUp();
+        OnHitpointChange();
     }
-    //Save States
-    /*
-     * INT preferedSkin
-     * INT pesos
-     * INT experience
-     * INT weaponLevel 
-     */
+
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("Spawnpoint").transform.position;
+    }
+
+    public void Respawn()
+    {
+        deathMenuAnim.SetTrigger("Hide");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+        player.Respawn();
+    }
     public void SaveState()
     {
         string s = "";
@@ -132,7 +147,6 @@ public class GameManager : MonoBehaviour
 
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-        player.transform.position = GameObject.Find("Spawnpoint").transform.position;
 
         //Change Player Skin
         pesos = int.Parse(data[1]);

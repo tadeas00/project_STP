@@ -1,43 +1,32 @@
 using System;
 using UnityEngine;
 
-public class OteviraniDveri : MonoBehaviour
+public class Door : MonoBehaviour
 {
     // Public variables
-    public GameObject[] dvereSpriteZavrene; // Pole se spritey zavřených dveří
-    public GameObject[] dvereSpriteOtevrene; // Pole se spritey otevřených dveří
-    public string jmenoNestvury; // Jméno nestvůry, která musí být zabita
-
-    // Private variables
-    private bool dvereOtevreny = false;
-
+    public GameObject[] closedDoor; 
+    public GameObject[] openedDoor;
     void Start()
     {
-        // Zkontrolujte, zda existují všechny potřebné objekty
-        if (dvereSpriteZavrene.Length == 0 || dvereSpriteOtevrene.Length == 0)
+        if (closedDoor.Length == 0 || openedDoor.Length == 0)
         {
             Debug.LogError("Chyba: Nebyly zadány všechny potřebné objekty!");
             return;
         }
-
-        // Deaktivujte spritey otevřených dveří
-        foreach (GameObject sprite in dvereSpriteOtevrene)
+        foreach (GameObject sprite in openedDoor)
         {
             sprite.SetActive(false);
         }
     }
-
-    public event Action OnEnemyDeath;
-
-    public void OtevriDvere()
+    public void OpenDoor()
     {
-        foreach (GameObject sprite in dvereSpriteOtevrene)
+        foreach (GameObject sprite in openedDoor)
         {
             sprite.SetActive(true);
         }
 
         
-        foreach (GameObject sprite in dvereSpriteZavrene)
+        foreach (GameObject sprite in closedDoor)
         {
             sprite.SetActive(false);
         }

@@ -14,7 +14,7 @@ public class CharacterMenu : MonoBehaviour
     public Image weaponSprite;
     public RectTransform xpBar;
 
-    // Character Selekce
+    // Character Selekce - Draft, maybe WIP
     public void OnArrowClick(bool right)
     {
         if (right)

@@ -170,9 +170,9 @@ MonoBehaviour:
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
   animator: {fileID: 1144955310984380967}
-  xpValue: 1
+  xpValue: 20
   triggerLenght: 1
-  chaseLenght: 5
+  chaseLenght: 3
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -187,6 +187,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  jmenoNestvury: 
 --- !u!1 &5619635839002826832
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +247,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damage: 2
   pushForce: 5
 --- !u!61 &6772087539265298365
 BoxCollider2D:

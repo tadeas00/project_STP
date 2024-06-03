@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Project_STP
+  m_text: RPG Unity Hra
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afd300f84443fac4e964f45feecf99c3, type: 2}
   m_sharedMaterial: {fileID: -1937598371011011897, guid: afd300f84443fac4e964f45feecf99c3, type: 2}

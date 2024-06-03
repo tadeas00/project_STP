@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 129679355
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 923779914, guid: 5a04657a4c0b2014c8be959831f9358e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -170,8 +170,10 @@ MonoBehaviour:
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
   animator: {fileID: 1144955310984380967}
+  ySpeed: 0.75
+  xSpeed: 1
   xpValue: 20
-  triggerLenght: 1
+  triggerLenght: 0.5
   chaseLenght: 3
   filter:
     useTriggers: 0
